@@ -4,3 +4,11 @@
 # 
 
 p "Enter a list of words separated by spaces:"
+word = gets.chomp
+split_word = word.split
+
+split_word.each do |word|
+  if word.length.even?
+    p word
+  end
+end
